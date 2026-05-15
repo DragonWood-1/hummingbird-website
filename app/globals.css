@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-playfair: 'Playfair Display', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: #f8fdf9;
+  color: #1a2e1f;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #40916c; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #2d6a4f; }
+
+/* Hero gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #022c22 0%, #064e3b 30%, #065f46 60%, #047857 100%);
+}
+
+.hero-text-gradient {
+  background: linear-gradient(135deg, #6ee7b7, #34d399, #10b981, #95d5b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card styles */
+.feature-card {
+  @apply bg-white rounded-2xl shadow-sm border border-emerald-100 hover:shadow-lg hover:border-emerald-300 transition-all duration-300;
+}
+
+.species-card {
+  @apply bg-white rounded-2xl overflow-hidden shadow-sm border border-emerald-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+}
+
+/* Section styles */
+.section-heading {
+  font-family: var(--font-playfair);
+  @apply text-3xl md:text-4xl font-bold text-emerald-900;
+}
+
+.section-subheading {
+  @apply text-lg text-emerald-700 mt-3 max-w-2xl;
+}
+
+/* Status badge colors */
+.status-lc { @apply bg-green-100 text-green-800 border-green-200; }
+.status-nt { @apply bg-yellow-100 text-yellow-800 border-yellow-200; }
+.status-vu { @apply bg-orange-100 text-orange-800 border-orange-200; }
+.status-en { @apply bg-red-100 text-red-800 border-red-200; }
+.status-cr { @apply bg-red-900 text-white border-red-800; }
+
+/* Map container */
+.map-container {
+  height: 500px;
+  @apply rounded-2xl overflow-hidden border border-emerald-200;
+}
+
+/* Bloom calendar cell */
+.bloom-month {
+  @apply h-8 rounded transition-all duration-200;
+}
+.bloom-month.active { @apply bg-emerald-500; }
+.bloom-month.inactive { @apply bg-gray-100; }
+
+/* Garden grid */
+.garden-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  aspect-ratio: 2/1;
+}
+
+.garden-cell {
+  @apply rounded cursor-pointer transition-all duration-200 flex items-center justify-center text-xs;
+  aspect-ratio: 1;
+}
+
+/* Shimmer loading */
+.shimmer {
+  background: linear-gradient(90deg, #f0fdf4 0%, #d1fae5 50%, #f0fdf4 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .mobile-nav-open {
+    overflow: hidden;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print { display: none !important; }
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  font-family: var(--font-inter) !important;
+  border-radius: 1rem;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Custom tooltip */
+.tooltip {
+  position: relative;
+}
+.tooltip:hover::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #064e3b;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 50;
+}
+
+/* Pollinator score bar */
+.pollinator-bar {
+  @apply h-2 rounded-full bg-emerald-500 transition-all duration-500;
+}
+
+/* Shop card */
+.shop-card {
+  @apply bg-white rounded-2xl overflow-hidden shadow-sm border border-emerald-100 hover:shadow-lg transition-all duration-300;
+}
+
+/* Navigation active link */
+.nav-link-active {
+  @apply text-emerald-600 font-semibold;
+}
