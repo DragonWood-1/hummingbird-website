@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hummingbirdguide.com"),
   title: {
     default: "HummingbirdGuide.com – Species, Migration, Garden Planner & More",
     template: "%s | HummingbirdGuide.com",
