@@ -54,7 +54,7 @@ export default function Footer() {
             Get Seasonal Hummingbird Alerts
           </h3>
           <p className="text-emerald-200 mb-6">Migration updates, garden tips & exclusive content delivered to your inbox.</p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" action="#">
             <input
               type="email"
               placeholder="your@email.com"

@@ -129,18 +129,16 @@ export default function SpeciesPage() {
               >
                 {/* Image */}
                 <div className="relative h-52 overflow-hidden bg-emerald-100">
-                  <img
-                    src={sp.imageUrl}
-                    alt={sp.commonName}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      const t = e.target as HTMLImageElement;
-                      t.style.display = "none";
-                      if (t.parentElement) {
-                        t.parentElement.style.background = `linear-gradient(135deg, ${sp.colors.primary}, ${sp.colors.secondary})`;
-                      }
-                    }}
-                  />
+                  <div
+                    className="w-full h-full relative"
+                    style={{ background: `linear-gradient(135deg, ${sp.colors.primary}, ${sp.colors.secondary})` }}
+                  >
+                    <img
+                      src={sp.imageUrl}
+                      alt={sp.commonName}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+                    />
+                  </div>
                   {/* Status badge */}
                   <div className="absolute top-3 right-3">
                     <ConservationBadge

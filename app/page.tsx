@@ -165,16 +165,16 @@ export default function HomePage() {
             {featuredSpecies.map((sp) => (
               <Link key={sp.slug} href={`/species/${sp.slug}`} className="species-card group">
                 <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={sp.imageUrl}
-                    alt={sp.commonName}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = "none";
-                      target.parentElement!.style.background = `linear-gradient(135deg, ${sp.colors.primary}, ${sp.colors.secondary})`;
-                    }}
-                  />
+                  <div
+                    className="w-full h-full relative"
+                    style={{ background: `linear-gradient(135deg, ${sp.colors.primary}, ${sp.colors.secondary})` }}
+                  >
+                    <img
+                      src={sp.imageUrl}
+                      alt={sp.commonName}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+                    />
+                  </div>
                   <div className="absolute top-3 right-3">
                     <span className={`text-xs font-bold px-2 py-1 rounded-full border status-${sp.conservationCode.toLowerCase()}`}>
                       {sp.conservationCode}
