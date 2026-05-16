@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "rufous hummingbird",
     "similar hummingbird species",
   ],
-  alternates: { canonical: "https://hummingbirdguide.com/identifier" },
+  alternates: { canonical: "https://hummingbirdwatcher.com/identifier" },
 };
 
 export default function IdentifierPage() {

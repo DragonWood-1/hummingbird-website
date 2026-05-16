@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Hummingbird Shop – Feeders, Art Prints, Coloring Pages & Garden Seeds",
   description: "Shop our curated collection of hummingbird feeders, art prints, coloring pages, garden decor, and hummingbird-attracting plant seeds. Perfect gifts for birdwatchers and nature lovers.",
   keywords: ["hummingbird feeder","hummingbird art prints","hummingbird coloring pages","hummingbird garden decor","hummingbird seeds","hummingbird gifts","hummingbird merchandise"],
-  alternates: { canonical: "https://hummingbirdguide.com/shop" },
+  alternates: { canonical: "https://hummingbirdwatcher.com/shop" },
 };
 
 const coloringPages = [
@@ -397,7 +397,7 @@ export default function ShopPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-emerald-700">{feeder.price}</span>
                     <a
-                      href={feeder.asin ? `https://www.amazon.com/dp/${feeder.asin}?tag=hummingbirdguide-20` : "#"}
+                      href={feeder.asin ? `https://www.amazon.com/dp/${feeder.asin}?tag=hummingbirdwatcher-20` : "#"}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       className="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-xl transition-colors"

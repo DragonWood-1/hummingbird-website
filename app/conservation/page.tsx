@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Hummingbird Conservation Status & Life Span Data",
   description: "Explore hummingbird conservation status by species, population trends, threats to hummingbirds, lifespan data, and how you can help protect these amazing birds.",
   keywords: ["hummingbird conservation","hummingbird lifespan","threatened hummingbirds","hummingbird population","protect hummingbirds","hummingbird habitat loss","IUCN hummingbird"],
-  alternates: { canonical: "https://hummingbirdguide.com/conservation" },
+  alternates: { canonical: "https://hummingbirdwatcher.com/conservation" },
 };
 
 const threats = [
@@ -101,7 +101,7 @@ export default function ConservationPage() {
             "@type": "WebPage",
             name: "Hummingbird Conservation Status",
             description: "IUCN conservation status, lifespan data, threats, and conservation actions for North American hummingbirds.",
-            url: "https://hummingbirdguide.com/conservation",
+            url: "https://hummingbirdwatcher.com/conservation",
           }),
         }}
       />

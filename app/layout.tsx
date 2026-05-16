@@ -4,10 +4,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hummingbirdguide.com"),
+  metadataBase: new URL("https://hummingbirdwatcher.com"),
   title: {
-    default: "HummingbirdGuide.com – Species, Migration, Garden Planner & More",
-    template: "%s | HummingbirdGuide.com",
+    default: "HummingbirdWatcher.com – Species, Migration, Garden Planner & More",
+    template: "%s | HummingbirdWatcher.com",
   },
   description: "The ultimate hummingbird resource: species encyclopedia, migration tracker, interactive maps, garden planner, hummingbird identifier, conservation status, and shopping for feeders, prints & more.",
   keywords: [
@@ -17,20 +17,20 @@ export const metadata: Metadata = {
     "DIY hummingbird feeder","hummingbird plants","attract hummingbirds","hummingbird encyclopedia",
     "hummingbird conservation","hummingbird atlas","migration map","hummingbird flowers",
   ],
-  authors: [{ name: "HummingbirdGuide.com" }],
-  creator: "HummingbirdGuide.com",
+  authors: [{ name: "HummingbirdWatcher.com" }],
+  creator: "HummingbirdWatcher.com",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hummingbirdguide.com",
-    siteName: "HummingbirdGuide.com",
-    title: "HummingbirdGuide.com – Your Complete Hummingbird Resource",
+    url: "https://hummingbirdwatcher.com",
+    siteName: "HummingbirdWatcher.com",
+    title: "HummingbirdWatcher.com – Your Complete Hummingbird Resource",
     description: "Species encyclopedia, migration tracker, garden planner, hummingbird identifier & conservation tools — all in one place.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Hummingbird in flight" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HummingbirdGuide.com",
+    title: "HummingbirdWatcher.com",
     description: "The complete hummingbird resource for birders, gardeners & nature lovers.",
     images: ["/og-image.jpg"],
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
   },
-  alternates: { canonical: "https://hummingbirdguide.com" },
+  alternates: { canonical: "https://hummingbirdwatcher.com" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

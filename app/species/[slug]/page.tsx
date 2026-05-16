@@ -38,12 +38,12 @@ export async function generateMetadata({
       ...sp.habitat.slice(0, 3),
     ],
     alternates: {
-      canonical: `https://hummingbirdguide.com/species/${sp.slug}`,
+      canonical: `https://hummingbirdwatcher.com/species/${sp.slug}`,
     },
     openGraph: {
       title: `${sp.commonName} (${sp.scientificName})`,
       description: sp.description.slice(0, 200),
-      url: `https://hummingbirdguide.com/species/${sp.slug}`,
+      url: `https://hummingbirdwatcher.com/species/${sp.slug}`,
       images: [
         {
           url: sp.imageUrl,
@@ -55,7 +55,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${sp.commonName} | HummingbirdGuide.com`,
+      title: `${sp.commonName} | HummingbirdWatcher.com`,
       description: sp.description.slice(0, 200),
       images: [sp.imageUrl],
     },
@@ -120,18 +120,18 @@ export default function SpeciesProfilePage({
     headline: `${sp.commonName} (${sp.scientificName}) – Hummingbird Species Profile`,
     description: sp.description,
     image: sp.imageUrl,
-    author: { "@type": "Organization", name: "HummingbirdGuide.com" },
+    author: { "@type": "Organization", name: "HummingbirdWatcher.com" },
     publisher: {
       "@type": "Organization",
-      name: "HummingbirdGuide.com",
+      name: "HummingbirdWatcher.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://hummingbirdguide.com/logo.png",
+        url: "https://hummingbirdwatcher.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://hummingbirdguide.com/species/${sp.slug}`,
+      "@id": `https://hummingbirdwatcher.com/species/${sp.slug}`,
     },
     keywords: [sp.commonName, sp.scientificName, "hummingbird", ...sp.colorTags].join(", "),
   };

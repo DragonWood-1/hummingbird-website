@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     "hummingbird facts",
     "backyard hummingbirds",
   ],
-  alternates: { canonical: "https://hummingbirdguide.com/species" },
+  alternates: { canonical: "https://hummingbirdwatcher.com/species" },
   openGraph: {
     title: "Hummingbird Species – All North American Profiles",
     description:
       "Browse in-depth profiles for every North American hummingbird species, with identification tips, range maps, and garden advice.",
-    url: "https://hummingbirdguide.com/species",
+    url: "https://hummingbirdwatcher.com/species",
   },
 };
 

@@ -98,7 +98,7 @@ export default function Navigation() {
                 }`}
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                HummingbirdGuide
+                HummingbirdWatcher
               </span>
               <span className={`block text-xs -mt-1 ${scrolled ? "text-emerald-600" : "text-emerald-300"}`}>
                 .com

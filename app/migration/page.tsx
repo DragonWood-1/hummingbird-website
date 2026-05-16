@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Hummingbird Migration Tracker – Maps, Heat Maps & Range Overlays",
   description: "Track hummingbird migration in real time. Explore interactive maps, heat maps by month, species range overlays, weather corridors, and expert tips on when to put out feeders by region.",
   keywords: ["hummingbird migration","migration tracker","migration map","hummingbird heat map","when do hummingbirds arrive","hummingbird migration map","spring migration","fall migration"],
-  alternates: { canonical: "https://hummingbirdguide.com/migration" },
+  alternates: { canonical: "https://hummingbirdwatcher.com/migration" },
 };
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];

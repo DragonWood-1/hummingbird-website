@@ -78,7 +78,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <span className="text-3xl">🐦</span>
               <span className="font-bold text-xl" style={{ fontFamily: "'Playfair Display', serif" }}>
-                HummingbirdGuide
+                HummingbirdWatcher
               </span>
             </Link>
             <p className="text-emerald-300 text-sm leading-relaxed">
@@ -126,7 +126,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-emerald-900 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-emerald-500">
-          <p>© {new Date().getFullYear()} HummingbirdGuide.com — All rights reserved.</p>
+          <p>© {new Date().getFullYear()} HummingbirdWatcher.com — All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
