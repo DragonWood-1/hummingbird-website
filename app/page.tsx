@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { species } from "@/lib/species-data";
 import { plants } from "@/lib/plants-data";
+import AdUnit from "@/components/AdUnit";
 
 export default function HomePage() {
   const featuredSpecies = species.slice(0, 3);
@@ -70,6 +71,13 @@ export default function HomePage() {
           <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
         </div>
       </section>
+
+      {/* Ad: below hero */}
+      <div className="bg-white py-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <AdUnit slot="1234567890" format="leaderboard" />
+        </div>
+      </div>
 
       {/* Feature Grid */}
       <section className="py-20 bg-white">
@@ -403,6 +411,13 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Ad: between shop and states */}
+      <div className="bg-gray-50 py-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <AdUnit slot="0987654321" format="auto" />
+        </div>
+      </div>
 
       {/* SEO: Hummingbirds by state teaser */}
       <section className="py-16 bg-emerald-950 text-white">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "Hummingbird Shop – Feeders, Art Prints, Coloring Pages & Garden Seeds",
@@ -344,6 +345,13 @@ export default function ShopPage() {
         </div>
       </section>
 
+      {/* Ad: between coloring pages and feeders */}
+      <div className="bg-white py-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <AdUnit slot="1122334455" format="auto" />
+        </div>
+      </div>
+
       {/* Feeders */}
       <section id="feeders" className="py-20 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -411,6 +419,13 @@ export default function ShopPage() {
           </div>
         </div>
       </section>
+
+      {/* Ad: between feeders and art prints */}
+      <div className="bg-emerald-50 py-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <AdUnit slot="5544332211" format="auto" />
+        </div>
+      </div>
 
       {/* Art Prints */}
       <section id="art-prints" className="py-20 bg-white">
