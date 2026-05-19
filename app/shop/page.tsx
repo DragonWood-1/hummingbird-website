@@ -68,44 +68,44 @@ const coloringPages = [
 
 const feeders = [
   {
-    title: "Perky-Pet 8 oz Hummingbird Feeder",
-    description: "Classic saucer-style feeder. Easy to fill and clean. Ant moat included. Highly rated by backyard birders.",
-    price: "$14.99",
+    title: "Perky-Pet 203CPBN Glass Hummingbird Feeder",
+    description: "Classic glass hummingbird feeder with perches, built-in ant moat, and bee guards. Easy to fill and clean — a top pick for backyard birders.",
+    price: "$8.97",
     rating: 4.7,
     reviews: 2847,
-    badge: "Top Rated",
-    asin: "B000FDN68K",
-    features: ["8 oz capacity", "Easy clean", "Ant moat", "4 feeding ports"],
+    badge: "Best Value",
+    href: "https://amzn.to/4wE4AHQ",
+    features: ["Ant moat", "Bee guards", "Perches", "Easy clean"],
   },
   {
-    title: "First Nature 16 oz Wide Mouth Feeder",
-    description: "Wide-mouth opening makes filling and cleaning simple. High capacity for busy feeding stations.",
-    price: "$12.99",
+    title: "First Nature 993091-546 16 oz Flower Feeder",
+    description: "Wide-mouth 16 oz red flower feeder makes filling and cleaning effortless. High capacity for busy feeding stations — a favorite among hummingbird enthusiasts.",
+    price: "$15.90",
     rating: 4.6,
     reviews: 5234,
     badge: "Most Popular",
-    asin: "B000FDN3MS",
+    href: "https://amzn.to/4nItToc",
     features: ["16 oz capacity", "Wide mouth", "10 feeding ports", "Dishwasher safe"],
   },
   {
-    title: "Aspects HummZinger Excel 16 oz",
-    description: "Award-winning saucer design. Built-in ant moat and rain guard. American-made quality.",
-    price: "$22.99",
+    title: "Aspects HummZinger Excel 16 oz (Limited Edition)",
+    description: "Award-winning saucer design with built-in ant moat and rain guard. Easy to disassemble and clean. American-made quality that lasts for years.",
+    price: "$32.99",
     rating: 4.8,
     reviews: 3102,
     badge: "Premium Pick",
-    asin: "B000FIE9GS",
+    href: "https://amzn.to/4eVJ1vU",
     features: ["16 oz capacity", "Built-in ant moat", "Rain guard", "USA made"],
   },
   {
-    title: "Juegoal Blown Glass Feeder",
-    description: "Hand-blown borosilicate glass with beautiful color swirls. Artistic piece that attracts attention.",
+    title: "Juegoal Glass Wild Bird Waterer 28 oz",
+    description: "28 oz glass water cooler with metal handle for hanging in garden, tree, or yard. Doubles as a decorative outdoor accent — hummingbirds love fresh water.",
     price: "$19.99",
     rating: 4.5,
     reviews: 891,
     badge: "Decorative",
-    asin: null,
-    features: ["Hand-blown glass", "4 oz capacity", "Decorative", "Easy fill"],
+    href: "https://amzn.to/4ufHO7v",
+    features: ["28 oz capacity", "Glass construction", "Metal handle", "Hanging design"],
   },
 ];
 
@@ -411,7 +411,7 @@ export default function ShopPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-emerald-700">{feeder.price}</span>
                     <a
-                      href={feeder.asin ? `https://www.amazon.com/dp/${feeder.asin}?tag=hummingbirdwatcher-20` : "#"}
+                      href={feeder.href}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       className="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-xl transition-colors"
