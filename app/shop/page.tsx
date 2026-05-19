@@ -18,6 +18,7 @@ const coloringPages = [
     format: "PDF Download",
     pages: 3,
     difficulty: "Beginner–Intermediate",
+    file: "/coloring-pages/ruby-throated-hummingbird.pdf",
   },
   {
     title: "Hummingbird Garden Scene",
@@ -27,6 +28,7 @@ const coloringPages = [
     format: "PDF Download",
     pages: 5,
     difficulty: "Intermediate",
+    file: "/coloring-pages/hummingbird-garden-scene.pdf",
   },
   {
     title: "Hummingbird Species Pack",
@@ -36,6 +38,7 @@ const coloringPages = [
     format: "PDF Download",
     pages: 12,
     difficulty: "All Levels",
+    file: "/coloring-pages/hummingbird-species-pack.pdf",
   },
   {
     title: "Hummingbird & Flowers Adult Coloring",
@@ -45,6 +48,7 @@ const coloringPages = [
     format: "PDF Download",
     pages: 6,
     difficulty: "Advanced",
+    file: "/coloring-pages/hummingbird-flowers-adult-coloring.pdf",
   },
   {
     title: "Kids Hummingbird Coloring Pack",
@@ -54,6 +58,7 @@ const coloringPages = [
     format: "PDF Download",
     pages: 8,
     difficulty: "Kids (3–8)",
+    file: "/coloring-pages/kids-hummingbird-coloring-pack.pdf",
   },
   {
     title: "Migration Map Coloring Page",
@@ -63,6 +68,7 @@ const coloringPages = [
     format: "PDF Download",
     pages: 2,
     difficulty: "All Levels",
+    file: "/coloring-pages/migration-map-coloring-page.pdf",
   },
 ];
 
@@ -350,9 +356,16 @@ export default function ShopPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-bold text-emerald-700">{item.price}</span>
-                    <button className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors">
-                      Download Now
-                    </button>
+                    <a
+                      href={item.file}
+                      download
+                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors inline-flex items-center gap-1.5"
+                    >
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                      Download PDF
+                    </a>
                   </div>
                 </div>
               </div>
