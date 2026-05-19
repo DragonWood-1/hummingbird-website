@@ -201,64 +201,70 @@ const gardenDecor = [
 
 const seeds = [
   {
-    name: "Cardinal Flower Seeds",
+    name: "Cardinal Flower Seeds (100 PCS)",
     scientificName: "Lobelia cardinalis",
-    price: "$4.99",
-    servings: "50+ plants per packet",
+    price: "$7.59",
+    servings: "100 seeds per packet",
     zones: "3–9",
     bloomSeason: "July–September",
     pollinatorScore: 99,
     badge: "#1 Rated",
+    href: "https://amzn.to/49ZrPlN",
   },
   {
-    name: "Bee Balm Mix Seeds",
-    scientificName: "Monarda didyma",
-    price: "$3.99",
-    servings: "200+ seeds",
+    name: "KVITER Spotted Bee Balm Seeds (350 PCS)",
+    scientificName: "Monarda punctata",
+    price: "$7.99",
+    servings: "350 seeds per packet",
     zones: "4–9",
     bloomSeason: "June–August",
     pollinatorScore: 95,
-    badge: "Native",
+    badge: "Non-GMO",
+    href: "https://amzn.to/4uXHOJi",
   },
   {
-    name: "Trumpet Vine Seeds",
+    name: "Trumpet Vine Seeds (300 PCS)",
     scientificName: "Campsis radicans",
-    price: "$5.99",
-    servings: "25 seeds",
+    price: "$8.99",
+    servings: "300 seeds per packet",
     zones: "4–9",
     bloomSeason: "June–September",
     pollinatorScore: 98,
     badge: "Native",
+    href: "https://amzn.to/4wCdHIX",
   },
   {
-    name: "Red Salvia Seeds",
+    name: "SVI Red Sage Seeds (1000 PCS)",
     scientificName: "Salvia coccinea",
-    price: "$2.99",
-    servings: "500+ seeds",
+    price: "$7.49",
+    servings: "1000 seeds per packet",
     zones: "Annual",
     bloomSeason: "May–Frost",
     pollinatorScore: 90,
-    badge: "Easy Grow",
+    badge: "Heirloom",
+    href: "https://amzn.to/42HWfFq",
   },
   {
-    name: "Penstemon Mix Seeds",
-    scientificName: "Penstemon strictus mix",
-    price: "$4.49",
-    servings: "100+ seeds",
-    zones: "3–9",
+    name: "Penstemon Spectabilis Seeds (500+)",
+    scientificName: "Penstemon spectabilis",
+    price: "$9.99",
+    servings: "500+ seeds per packet",
+    zones: "5–9",
     bloomSeason: "May–July",
     pollinatorScore: 88,
-    badge: "Western Native",
+    badge: "Drought Tolerant",
+    href: "https://amzn.to/4ufJihX",
   },
   {
-    name: "Hummingbird Garden Mix",
-    scientificName: "Multi-species mix",
-    price: "$7.99",
-    servings: "1000+ seeds",
+    name: "HOME GROWN Wildflower Seeds Mix (90,000+)",
+    scientificName: "24-variety mix",
+    price: "$15.99",
+    servings: "3 oz / 90,000+ seeds",
     zones: "4–9",
     bloomSeason: "Spring–Fall",
     pollinatorScore: 93,
     badge: "Best Value",
+    href: "https://amzn.to/4dtdwH7",
   },
 ];
 
@@ -548,9 +554,14 @@ export default function ShopPage() {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-emerald-700">{seed.price}</span>
-                  <button className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-xl transition-colors">
-                    Add to Cart
-                  </button>
+                  <a
+                    href={seed.href}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-xl transition-colors"
+                  >
+                    View on Amazon
+                  </a>
                 </div>
               </div>
             ))}
