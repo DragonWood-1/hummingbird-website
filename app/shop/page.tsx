@@ -111,36 +111,40 @@ const feeders = [
 
 const artPrints = [
   {
-    title: "Ruby-throated Hummingbird Art Print",
-    description: "Stunning watercolor illustration of a male ruby-throated hummingbird visiting trumpet vine. Multiple sizes.",
-    price: "From $18.00",
-    sizes: ["5×7", "8×10", "11×14", "16×20"],
-    medium: "Giclée on archival paper",
+    title: "PBXBJY Hummingbird Watercolor Canvas Print 12×12",
+    description: "Hummingbird with floral watercolor painting on canvas — framed and ready to hang. Perfect for bathroom, bedroom, or office decor.",
+    price: "$21.59",
+    sizes: ["12×12"],
+    medium: "Framed canvas print",
     badge: "Bestseller",
+    href: "https://amzn.to/4dCTVV3",
   },
   {
-    title: "Hummingbirds of North America Poster",
-    description: "Educational poster featuring 12 North American species with names and range information. Great for classrooms.",
-    price: "From $24.00",
-    sizes: ["11×14", "16×20", "24×36"],
-    medium: "Matte poster print",
-    badge: "Educational",
-  },
-  {
-    title: "Golden Hummingbird Botanical Print",
-    description: "Elegant art nouveau-inspired illustration of three hummingbirds among tropical flowers. A true statement piece.",
-    price: "From $22.00",
-    sizes: ["8×10", "11×14", "16×20"],
-    medium: "Giclée on archival paper",
+    title: "Canvbay Hummingbird Spring Flower Canvas 24×36",
+    description: "Large-format hummingbird with spring flowers canvas print, ready to hang. A striking statement piece for living room, bedroom, or office.",
+    price: "$55.99",
+    sizes: ["24×36"],
+    medium: "Canvas, ready to hang",
     badge: "Gallery Pick",
+    href: "https://amzn.to/4nIw0bC",
   },
   {
-    title: "Migration Map Art Print",
-    description: "Artistic rendering of Ruby-throated Hummingbird migration routes. Beautiful as a gift for birders.",
-    price: "From $20.00",
-    sizes: ["8×10", "11×14", "16×20"],
-    medium: "Giclée on archival paper",
-    badge: null,
+    title: "XJYISUO Vintage Gold Framed Hummingbird Wall Art",
+    description: "Colorful hummingbird botanical canvas art in vintage gold frame. Nature-inspired floral and bird painting for living room, bedroom, or dining room.",
+    price: "$25.99",
+    sizes: ["Multiple"],
+    medium: "Framed canvas print",
+    badge: "Gift Idea",
+    href: "https://amzn.to/4uQjCZc",
+  },
+  {
+    title: "National Geographic Bird Migration Wall Map",
+    description: "Eastern Hemisphere laminated wall map showing bird migration routes — 31.25×20.25 inches. A must-have for serious birders and nature enthusiasts.",
+    price: "$52.99",
+    sizes: ["31.25×20.25"],
+    medium: "Laminated wall map",
+    badge: "Educational",
+    href: "https://amzn.to/4wSXAqK",
   },
 ];
 
@@ -456,9 +460,14 @@ export default function ShopPage() {
                   <div className="text-xs text-gray-500 mb-4">{print.medium}</div>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-emerald-700">{print.price}</span>
-                    <button className="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors">
-                      Shop Now
-                    </button>
+                    <a
+                      href={print.href}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors"
+                    >
+                      View on Amazon
+                    </a>
                   </div>
                 </div>
               </div>
