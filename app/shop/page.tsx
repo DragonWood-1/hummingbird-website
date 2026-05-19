@@ -146,46 +146,52 @@ const artPrints = [
 
 const gardenDecor = [
   {
-    title: "Hummingbird Wind Spinner",
-    description: "Kinetic garden stake with three hummingbirds in colorful powder-coated steel. Spins beautifully in breeze.",
-    price: "$29.99",
-    category: "Garden Stakes",
-    badge: "Popular",
-  },
-  {
-    title: "Solar Hummingbird Light",
-    description: "Color-changing LED solar garden light shaped like a hovering hummingbird. Auto on at dusk.",
-    price: "$19.99",
-    category: "Solar Lights",
-    badge: null,
-  },
-  {
-    title: "Hummingbird Garden Stone",
-    description: "Cast stone garden marker with hummingbird relief design. Weather-resistant and beautiful.",
-    price: "$34.99",
+    title: "Spoontiques Hummingbird Stepping Stone",
+    description: "Spoontiques decorative garden stepping stone featuring a beautiful hummingbird design. Durable cast resin, weather-resistant for year-round outdoor use.",
+    price: "$22.99",
     category: "Stones & Markers",
     badge: "Gift Idea",
+    href: "https://amzn.to/4tHaYve",
   },
   {
-    title: "Metal Hummingbird Wall Art",
-    description: "Powder-coated steel hummingbird for indoor or outdoor walls. 24 inches wingspan.",
-    price: "$44.99",
-    category: "Wall Art",
+    title: "Bshine Solar Hummingbird Lights",
+    description: "Metal stake solar lights with hanging flower and hummingbird design. Waterproof, auto on at dusk — perfect for paths, terrace, and lawn.",
+    price: "$24.99",
+    category: "Solar Lights",
+    badge: "Popular",
+    href: "https://amzn.to/4eUHpTh",
+  },
+  {
+    title: "FLAGWIX 3D Hummingbird Wind Spinner 12\"",
+    description: "3D stainless steel hummingbird wind spinner, rust-resistant and kinetic. A stunning gift for women, mom, or grandma — indoors or outdoors.",
+    price: "$27.95",
+    category: "Wind Spinners",
+    badge: "Gift Idea",
+    href: "https://amzn.to/4tTJWB2",
+  },
+  {
+    title: "Hummingbird Metal Wind Spinner 12\"",
+    description: "12-inch 3D stainless steel hanging wind spinner, great for yard art and garden decor. Perfect Christmas or birthday gift for hummingbird lovers.",
+    price: "$26.99",
+    category: "Wind Spinners",
     badge: null,
+    href: "https://amzn.to/4umK7Ws",
   },
   {
-    title: "Hummingbird Wind Chime",
-    description: "Copper-finished hummingbird wind chime with melodic tubes. Beautiful porch or garden accent.",
-    price: "$27.99",
+    title: "Vintage Hummingbird Deep Tone Wind Chime 32\"",
+    description: "Large 32\" outdoor wind chime with vintage hummingbird design and deep, melodic tones. Beautiful accent for patio, porch, balcony, or garden.",
+    price: "$26.99",
     category: "Wind Chimes",
-    badge: "New",
+    badge: "Bestseller",
+    href: "https://amzn.to/49YCmxA",
   },
   {
-    title: "Hummingbird Birdbath",
-    description: "Shallow ceramic birdbath designed for hummingbirds — they prefer misters and drippers over deep water.",
-    price: "$39.99",
+    title: "VIVOHOME Polyresin Pedestal Bird Bath 28\"",
+    description: "28-inch weather-resistant polyresin pedestal birdbath with 20\" bowl. Hummingbirds love shallow moving water — a must-have for any garden.",
+    price: "$37.99",
     category: "Birdbaths",
     badge: null,
+    href: "https://amzn.to/4fpz0Y4",
   },
 ];
 
@@ -472,7 +478,7 @@ export default function ShopPage() {
             {gardenDecor.map((item) => (
               <div key={item.title} className="shop-card p-6">
                 <div className="flex items-start justify-between gap-2 mb-3">
-                  <h3 className="font-bold text-gray-900 group-hover:text-emerald-700">{item.title}</h3>
+                  <h3 className="font-bold text-gray-900">{item.title}</h3>
                   {item.badge && (
                     <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full flex-shrink-0">{item.badge}</span>
                   )}
@@ -481,9 +487,14 @@ export default function ShopPage() {
                 <p className="text-sm text-gray-600 mb-4">{item.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-emerald-700">{item.price}</span>
-                  <button className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors">
-                    Add to Cart
-                  </button>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors"
+                  >
+                    View on Amazon
+                  </a>
                 </div>
               </div>
             ))}
