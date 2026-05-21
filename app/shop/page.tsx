@@ -82,6 +82,7 @@ const feeders = [
     badge: "Best Value",
     href: "https://amzn.to/4wE4AHQ",
     features: ["Ant moat", "Bee guards", "Perches", "Easy clean"],
+    image: "/images/feeders/perky-pet-feeder.jpg",
   },
   {
     title: "First Nature 993091-546 16 oz Flower Feeder",
@@ -92,6 +93,7 @@ const feeders = [
     badge: "Most Popular",
     href: "https://amzn.to/4nItToc",
     features: ["16 oz capacity", "Wide mouth", "10 feeding ports", "Dishwasher safe"],
+    image: "/images/feeders/first-nature-feeder.jpg",
   },
   {
     title: "Aspects HummZinger Excel 16 oz (Limited Edition)",
@@ -100,8 +102,9 @@ const feeders = [
     rating: 4.8,
     reviews: 3102,
     badge: "Premium Pick",
-    href: "https://amzn.to/4eVJ1vU",
+    href: "https://amzn.to/4eVJ1pU",
     features: ["16 oz capacity", "Built-in ant moat", "Rain guard", "USA made"],
+    image: "/images/feeders/hummzinger-feeder.jpg",
   },
   {
     title: "Juegoal Glass Wild Bird Waterer 28 oz",
@@ -112,6 +115,7 @@ const feeders = [
     badge: "Decorative",
     href: "https://amzn.to/4ufHO7v",
     features: ["28 oz capacity", "Glass construction", "Metal handle", "Hanging design"],
+    image: "/images/feeders/juegoal-waterer.jpg",
   },
 ];
 
@@ -411,8 +415,12 @@ export default function ShopPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {feeders.map((feeder) => (
               <div key={feeder.title} className="shop-card p-6 flex gap-5">
-                <div className="w-24 h-24 bg-gradient-to-br from-red-50 to-orange-100 rounded-xl flex items-center justify-center text-4xl flex-shrink-0">
-                  🌸
+                <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-red-50">
+                  <img
+                    src={feeder.image}
+                    alt={feeder.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-start justify-between gap-2 mb-1">
