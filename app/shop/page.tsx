@@ -3,74 +3,11 @@ import Link from "next/link";
 import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
-  title: "Hummingbird Shop – Feeders, Art Prints, Coloring Pages & Garden Seeds",
-  description: "Shop our curated collection of hummingbird feeders, art prints, coloring pages, garden decor, and hummingbird-attracting plant seeds. Perfect gifts for birdwatchers and nature lovers.",
-  keywords: ["hummingbird feeder","hummingbird art prints","hummingbird coloring pages","hummingbird garden decor","hummingbird seeds","hummingbird gifts","hummingbird merchandise"],
+  title: "Hummingbird Shop – Feeders, Art Prints & Garden Seeds",
+  description: "Shop our curated collection of hummingbird feeders, art prints, garden decor, and hummingbird-attracting plant seeds. Perfect gifts for birdwatchers and nature lovers.",
+  keywords: ["hummingbird feeder","hummingbird art prints","hummingbird garden decor","hummingbird seeds","hummingbird gifts","hummingbird merchandise"],
   alternates: { canonical: "https://hummingbirdwatcher.com/shop" },
 };
-
-const coloringPages = [
-  {
-    title: "Ruby-throated Hummingbird",
-    description: "Detailed line art of North America's most beloved hummingbird, perfect for all skill levels.",
-    price: "$2.99",
-    badge: "Bestseller",
-    format: "PDF Download",
-    pages: 3,
-    difficulty: "Beginner–Intermediate",
-    file: "/coloring-pages/ruby-throated-hummingbird.pdf",
-  },
-  {
-    title: "Hummingbird Garden Scene",
-    description: "A hummingbird visiting trumpet vine and bee balm in a beautiful garden setting.",
-    price: "$3.99",
-    badge: "New",
-    format: "PDF Download",
-    pages: 5,
-    difficulty: "Intermediate",
-    file: "/coloring-pages/hummingbird-garden-scene.pdf",
-  },
-  {
-    title: "Hummingbird Species Pack",
-    description: "8 different hummingbird species in one bundle: Ruby-throated, Anna's, Rufous, Calliope & more.",
-    price: "$9.99",
-    badge: "Best Value",
-    format: "PDF Download",
-    pages: 12,
-    difficulty: "All Levels",
-    file: "/coloring-pages/hummingbird-species-pack.pdf",
-  },
-  {
-    title: "Hummingbird & Flowers Adult Coloring",
-    description: "Intricate mandala-style designs featuring hummingbirds and native flowers. Meditation coloring for adults.",
-    price: "$4.99",
-    badge: null,
-    format: "PDF Download",
-    pages: 6,
-    difficulty: "Advanced",
-    file: "/coloring-pages/hummingbird-flowers-adult-coloring.pdf",
-  },
-  {
-    title: "Kids Hummingbird Coloring Pack",
-    description: "Simple, bold outlines perfect for young artists ages 3-8. Fun facts on each page.",
-    price: "$2.99",
-    badge: null,
-    format: "PDF Download",
-    pages: 8,
-    difficulty: "Kids (3–8)",
-    file: "/coloring-pages/kids-hummingbird-coloring-pack.pdf",
-  },
-  {
-    title: "Migration Map Coloring Page",
-    description: "Color in the migration routes across North America. Educational and fun.",
-    price: "$1.99",
-    badge: null,
-    format: "PDF Download",
-    pages: 2,
-    difficulty: "All Levels",
-    file: "/coloring-pages/migration-map-coloring-page.pdf",
-  },
-];
 
 const feeders = [
   {
@@ -82,7 +19,7 @@ const feeders = [
     badge: "Best Value",
     href: "https://amzn.to/4wE4AHQ",
     features: ["Ant moat", "Bee guards", "Perches", "Easy clean"],
-    image: "/images/feeders/perky-pet-feeder.jpg",
+    image: "https://m.media-amazon.com/images/I/61lKZhnxjiL._AC_SX679_.jpg",
   },
   {
     title: "First Nature 993091-546 16 oz Flower Feeder",
@@ -93,7 +30,7 @@ const feeders = [
     badge: "Most Popular",
     href: "https://amzn.to/4nItToc",
     features: ["16 oz capacity", "Wide mouth", "10 feeding ports", "Dishwasher safe"],
-    image: "/images/feeders/first-nature-feeder.jpg",
+    image: "https://m.media-amazon.com/images/I/71kK8P+Kf-L._AC_SY300_SX300_QL70_FMwebp_.jpg",
   },
   {
     title: "Aspects HummZinger Excel 16 oz (Limited Edition)",
@@ -102,9 +39,9 @@ const feeders = [
     rating: 4.8,
     reviews: 3102,
     badge: "Premium Pick",
-    href: "https://amzn.to/4eVJ1pU",
+    href: "https://amzn.to/4eVJ1vU",
     features: ["16 oz capacity", "Built-in ant moat", "Rain guard", "USA made"],
-    image: "/images/feeders/hummzinger-feeder.jpg",
+    image: "https://m.media-amazon.com/images/I/61saldbtcUL._AC_.jpg",
   },
   {
     title: "Juegoal Glass Wild Bird Waterer 28 oz",
@@ -115,7 +52,7 @@ const feeders = [
     badge: "Decorative",
     href: "https://amzn.to/4ufHO7v",
     features: ["28 oz capacity", "Glass construction", "Metal handle", "Hanging design"],
-    image: "/images/feeders/juegoal-waterer.jpg",
+    image: "https://m.media-amazon.com/images/I/81GXuux6Q5S._AC_SL1500_.jpg",
   },
 ];
 
@@ -128,6 +65,7 @@ const artPrints = [
     medium: "Framed canvas print",
     badge: "Bestseller",
     href: "https://amzn.to/4dCTVV3",
+    image: "https://m.media-amazon.com/images/I/71K3Ci6RyzL._AC_SL1500_.jpg",
   },
   {
     title: "Canvbay Hummingbird Spring Flower Canvas 24×36",
@@ -137,6 +75,7 @@ const artPrints = [
     medium: "Canvas, ready to hang",
     badge: "Gallery Pick",
     href: "https://amzn.to/4nIw0bC",
+    image: "https://m.media-amazon.com/images/I/81DOv0JbY5L._AC_SL1500_.jpg",
   },
   {
     title: "XJYISUO Vintage Gold Framed Hummingbird Wall Art",
@@ -146,6 +85,7 @@ const artPrints = [
     medium: "Framed canvas print",
     badge: "Gift Idea",
     href: "https://amzn.to/4uQjCZc",
+    image: "https://m.media-amazon.com/images/I/81WpZOD8k5L._AC_SL1500_.jpg",
   },
   {
     title: "National Geographic Bird Migration Wall Map",
@@ -155,6 +95,7 @@ const artPrints = [
     medium: "Laminated wall map",
     badge: "Educational",
     href: "https://amzn.to/4wSXAqK",
+    image: "https://m.media-amazon.com/images/I/81hxPD6O4+L._AC_SL1500_.jpg",
   },
 ];
 
@@ -166,6 +107,7 @@ const gardenDecor = [
     category: "Stones & Markers",
     badge: "Gift Idea",
     href: "https://amzn.to/4tHaYve",
+    image: "https://m.media-amazon.com/images/I/71uiJV3lomL._AC_SL1500_.jpg",
   },
   {
     title: "Bshine Solar Hummingbird Lights",
@@ -174,6 +116,7 @@ const gardenDecor = [
     category: "Solar Lights",
     badge: "Popular",
     href: "https://amzn.to/4eUHpTh",
+    image: "https://m.media-amazon.com/images/I/81pEKgfh7-L._AC_SL1494_.jpg",
   },
   {
     title: "FLAGWIX 3D Hummingbird Wind Spinner 12\"",
@@ -182,6 +125,7 @@ const gardenDecor = [
     category: "Wind Spinners",
     badge: "Gift Idea",
     href: "https://amzn.to/4tTJWB2",
+    image: "https://m.media-amazon.com/images/I/91H0AzpJ8FL._AC_SL1500_.jpg",
   },
   {
     title: "Hummingbird Metal Wind Spinner 12\"",
@@ -190,6 +134,7 @@ const gardenDecor = [
     category: "Wind Spinners",
     badge: null,
     href: "https://amzn.to/4umK7Ws",
+    image: "https://m.media-amazon.com/images/I/71eVU+0H-nL._AC_SL1200_.jpg",
   },
   {
     title: "Vintage Hummingbird Deep Tone Wind Chime 32\"",
@@ -198,6 +143,7 @@ const gardenDecor = [
     category: "Wind Chimes",
     badge: "Bestseller",
     href: "https://amzn.to/49YCmxA",
+    image: "https://m.media-amazon.com/images/I/61aI0fN3ctL._AC_SL1022_.jpg",
   },
   {
     title: "VIVOHOME Polyresin Pedestal Bird Bath 28\"",
@@ -206,6 +152,7 @@ const gardenDecor = [
     category: "Birdbaths",
     badge: null,
     href: "https://amzn.to/4fpz0Y4",
+    image: "https://m.media-amazon.com/images/I/81+qHyMVY8L._AC_SL1500_.jpg",
   },
 ];
 
@@ -220,6 +167,7 @@ const seeds = [
     pollinatorScore: 99,
     badge: "#1 Rated",
     href: "https://amzn.to/49ZrPlN",
+    image: "https://m.media-amazon.com/images/I/81tJp+2sfIL._AC_SL1500_.jpg",
   },
   {
     name: "KVITER Spotted Bee Balm Seeds (350 PCS)",
@@ -231,6 +179,7 @@ const seeds = [
     pollinatorScore: 95,
     badge: "Non-GMO",
     href: "https://amzn.to/4uXHOJi",
+    image: "https://m.media-amazon.com/images/I/81e96vg-zLL._AC_SL1500_.jpg",
   },
   {
     name: "Trumpet Vine Seeds (300 PCS)",
@@ -304,11 +253,10 @@ export default function ShopPage() {
             <span className="hero-text-gradient">Hummingbird Lover</span>
           </h1>
           <p className="text-xl text-emerald-200 max-w-3xl mx-auto mb-8">
-            Curated feeders, art prints, coloring pages, garden decor, and native plant seeds — perfect for birders, gardeners, and gift-givers.
+            Curated feeders, art prints, garden decor, and native plant seeds — perfect for birders, gardeners, and gift-givers.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Coloring Pages", href: "#coloring-pages" },
               { label: "Feeders", href: "#feeders" },
               { label: "Art Prints", href: "#art-prints" },
               { label: "Garden Decor", href: "#decor" },
@@ -328,60 +276,6 @@ export default function ShopPage() {
           <p className="text-amber-800 text-xs text-center">
             <strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. We may earn a small commission when you purchase through our links, at no additional cost to you. This helps us maintain the site.
           </p>
-        </div>
-      </div>
-
-      {/* Coloring Pages */}
-      <section id="coloring-pages" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-12">
-            <div>
-              <h2 className="section-heading">🎨 Printable Coloring Pages</h2>
-              <p className="text-emerald-700 mt-2">Instant PDF downloads — print at home and enjoy!</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {coloringPages.map((item) => (
-              <div key={item.title} className="shop-card">
-                {/* Placeholder image area */}
-                <div className="h-40 bg-gradient-to-br from-emerald-50 to-teal-100 flex items-center justify-center relative">
-                  <div className="text-6xl opacity-40">🐦</div>
-                  {item.badge && (
-                    <span className="absolute top-3 left-3 text-xs font-bold bg-emerald-600 text-white px-2 py-1 rounded-full">{item.badge}</span>
-                  )}
-                  <span className="absolute top-3 right-3 text-xs bg-white text-gray-600 px-2 py-1 rounded-full border shadow-sm">{item.format}</span>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-bold text-gray-900 mb-2 group-hover:text-emerald-700">{item.title}</h3>
-                  <p className="text-sm text-gray-600 mb-4">{item.description}</p>
-                  <div className="flex items-center gap-3 text-xs text-gray-500 mb-4">
-                    <span>📄 {item.pages} pages</span>
-                    <span>🎨 {item.difficulty}</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-emerald-700">{item.price}</span>
-                    <a
-                      href={item.file}
-                      download
-                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors inline-flex items-center gap-1.5"
-                    >
-                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                      </svg>
-                      Download PDF
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Ad: between coloring pages and feeders */}
-      <div className="bg-white py-4">
-        <div className="max-w-5xl mx-auto px-4">
-          <AdUnit slot="1122334455" format="auto" />
         </div>
       </div>
 
@@ -474,8 +368,12 @@ export default function ShopPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {artPrints.map((print) => (
               <div key={print.title} className="shop-card">
-                <div className="h-52 bg-gradient-to-br from-purple-50 to-pink-100 flex items-center justify-center relative">
-                  <div className="text-6xl opacity-30">🎨</div>
+                <div className="h-52 overflow-hidden relative">
+                  <img
+                    src={print.image}
+                    alt={print.title}
+                    className="w-full h-full object-cover"
+                  />
                   {print.badge && (
                     <span className="absolute top-3 left-3 text-xs font-bold bg-purple-600 text-white px-2 py-1 rounded-full">{print.badge}</span>
                   )}
@@ -512,25 +410,32 @@ export default function ShopPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {gardenDecor.map((item) => (
-              <div key={item.title} className="shop-card p-6">
-                <div className="flex items-start justify-between gap-2 mb-3">
-                  <h3 className="font-bold text-gray-900">{item.title}</h3>
+              <div key={item.title} className="shop-card">
+                <div className="h-48 overflow-hidden relative">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
                   {item.badge && (
-                    <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full flex-shrink-0">{item.badge}</span>
+                    <span className="absolute top-3 left-3 text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full">{item.badge}</span>
                   )}
+                  <span className="absolute top-3 right-3 text-xs bg-white text-gray-600 px-2 py-1 rounded-full border shadow-sm">{item.category}</span>
                 </div>
-                <span className="inline-block text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full mb-3">{item.category}</span>
-                <p className="text-sm text-gray-600 mb-4">{item.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xl font-bold text-emerald-700">{item.price}</span>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors"
-                  >
-                    View on Amazon
-                  </a>
+                <div className="p-6">
+                  <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-sm text-gray-600 mb-4">{item.description}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xl font-bold text-emerald-700">{item.price}</span>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors"
+                    >
+                      View on Amazon
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -548,6 +453,15 @@ export default function ShopPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {seeds.map((seed) => (
               <div key={seed.name} className="shop-card p-6">
+                {"image" in seed && seed.image && (
+                  <div className="-mx-6 -mt-6 mb-5 h-40 overflow-hidden rounded-t-2xl">
+                    <img
+                      src={seed.image as string}
+                      alt={seed.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <div>
                     <h3 className="font-bold text-gray-900 group-hover:text-emerald-700">{seed.name}</h3>
@@ -605,9 +519,8 @@ export default function ShopPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">🎁 Gift Guide for Hummingbird Lovers</h2>
           <p className="text-gray-600 mb-8">Know a hummingbird enthusiast? These make perfect gifts for any budget.</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {[
-              { budget: "Under $10", idea: "Coloring page bundle", href: "#coloring-pages" },
               { budget: "Under $25", idea: "Hummingbird feeder + seeds", href: "#feeders" },
               { budget: "Under $50", idea: "Art print + garden decor", href: "#art-prints" },
               { budget: "Ultimate Gift", idea: "Full garden starter kit", href: "#seeds" },
