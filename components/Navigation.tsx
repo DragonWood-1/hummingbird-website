@@ -55,6 +55,15 @@ const navLinks = [
     ],
   },
   {
+    label: "Guides",
+    href: "/guides",
+    children: [
+      { label: "All Guides", href: "/guides" },
+      { label: "How to Attract Hummingbirds", href: "/guides/attract-hummingbirds" },
+      { label: "Nectar Recipe (4:1 Ratio)", href: "/guides/nectar-recipe" },
+    ],
+  },
+  {
     label: "Conservation",
     href: "/conservation",
   },
